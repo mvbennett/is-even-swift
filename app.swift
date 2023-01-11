@@ -10,6 +10,15 @@ func isEven(num: Int) -> String {
   }
 }
 
-print("Please enter a number")
-var num = Int(readLine()!)!
-print(isEven(num: num))
+func startSearch() {
+  print("Please enter a number")
+  let num = Int(readLine()!)!
+  print(isEven(num: num))
+  print("Would you like to check another number?")
+  let answer: String = readLine()!
+  if (answer == "y") {
+    startSearch()
+  }
+}
+
+startSearch()
