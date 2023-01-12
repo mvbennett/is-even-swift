@@ -5,6 +5,10 @@ func isEven(num: Int) -> String {
     return "This number is even!"
   }
 
+  else if (num == 69) {
+    return "Niiiiiice. This number is odd."
+  }
+
   else {
     return "This number is odd!"
   }
